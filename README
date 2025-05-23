@@ -1,14 +1,14 @@
-# Efficient WhatsApp Messenger Analyzer
+# 📈 Efficient WhatsApp Messenger Analyzer 🚀
 
-This Python script analyzes a WhatsApp chat export and visualizes messaging activity by day and hour for each participant. It helps you discover when you and your friends are most active in your WhatsApp conversations.
+This Python script analyzes your WhatsApp chat export and visualizes messaging activity by day and hour for each participant. Discover when you and your friends are most active in your WhatsApp conversations! 📱💬
 
-## Features
+## ✨ Features
 
-- Parses WhatsApp chat exports (in text format)
-- Identifies top 5 most active times (weekday and hour) for each participant
-- Generates a heatmap for each participant showing message frequency by day and hour
+- 📂 Parses WhatsApp chat exports (in text format)
+- 🕒 Identifies top 5 most active times (weekday and hour) for each participant
+- 🔥 Generates a colorful heatmap for each participant showing message frequency by day and hour
 
-## Requirements
+## 🛠️ Requirements
 
 - Python 3.7+
 - [matplotlib](https://matplotlib.org/) (for plotting)
@@ -20,7 +20,7 @@ source .venv/bin/activate  # if using a virtual environment
 pip install matplotlib
 ```
 
-## Usage
+## 🚦 Usage
 
 1. **Export your WhatsApp chat** as a `.txt` file (without media).
 2. Place the exported file in the project directory and rename it to `chat.txt` (or update the `CHAT_FILE` variable in `main.py`).
@@ -30,21 +30,21 @@ pip install matplotlib
 python main.py
 ```
 
-4. The script will print the top 5 active times for each participant and display a heatmap for each.
+4. The script will print the top 5 active times for each participant and display a heatmap for each. Get ready for some data magic! ✨
 
-## Notes
+## 📝 Notes
 
 - The script expects WhatsApp message lines in the format:  
   `[5/10/24, 22:15:29] Name: Message`
 - Only the hour of each message is considered (e.g., 22:30 counts as 22:00).
 - Heatmaps are shown for each participant; you can save them by uncommenting the `plt.savefig` line in the code.
 
-## Customization
+## 🎨 Customization
 
 - To analyze a different chat file, change the `CHAT_FILE` variable at the top of `main.py`.
 - To save heatmaps as images, uncomment the `plt.savefig` line in the plotting section.
 
 ---
 
-**Author:**  
+Made with ❤️ by  
 Alejandro Lares Pacheco
